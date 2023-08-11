@@ -1,0 +1,55 @@
+\chapter{Discrete Probability Distributions}
+\section{Simulation of Discrete Probabilities}
+
+The code solutions for  \href{https://github.com/krishramkumar06/probability/tree/main/grinstead_snell_probability_solutions/ch1/1-1}{section 1.1} are linked and posted on my github repository.
+
+%TODO set up github for solutions
+
+\section{Discrete Probability Distributions}
+
+\begin{oddenumerate}
+	\item $ P(\emptyset) = 0, P({a}) = 1/2, P({b}) = 1/3, P({c}) = 1/6, P({a,b}) = 5/6, P({b,c}) = 1/2, P(a,c) = 2/3, P(\Omega) = 1$
+	
+	\item Cases B, D. Elections, birthtimes, and grades have too many factors to make it likely to be uniform.
+	
+	\item Since we assume a uniform distribution, the probabilities would be 4/8. 2/8, 3/8, and 7/8, respectively.
+	
+	\item We can deduce that $ P(A) = 2/3 $. Thus, from PIE, $ P(A \cup B)  = 2/3 + 1/2 - 1/4 = (8+6-3)/12 = 11/12$
+	
+	\item We are given $ P(a) =5/8. P(f) = 5/8, P(a,f) = 1/4. $ The probability he chooses math must be 3/4, as if we are not in the art and french case we must have math selected. This also means that the probability we have either art or french is 1 (which can be shown from PIE or the Pigeonhole principle)
+	
+	\item If you have probability $ r/s $ of winning, you are $ r/(s-r) $ times more likely to win, meaning you would assign the situation $ r/(s-r) : 1 $ odds (alternatively written as $ r: s-r $). This means our situations have $ 1:51, 1:3, 1:35 $ odds respectively
+	
+	\item Since $ p = r/(r+s), $ There is a $ 2/5 $ chance Romance wins and a $ 1/3 $ chance downhill wins. Since it a race and there can be only one winner, the probability they both win is 0. this means the probability either of them win is $ 2/5 + 1/3 = (6+5)/15 = 11/15 $. This means the odds that either of them win are $ 11:4 $
+	
+	\item We can consider the 9 ordered pairs $ (A,A), (A,B), ... (C,B), (C,C) $. We want to find $ P(A,B) +P(B, A) + P(B,B) $ and we are given $ P(B,A) +   P(B,B) +   P(B,C) = 0.3$, $ P(A,B) + P(B,B) + P(C,B) = 0.4$, and $ P(C,B) +P(B, C) + P(B,B) = 0.1 $. Through close inspection, our probability is $ .3 + .4 - .1 = .6 $
+	
+	\item part A results from complementary counting: the probability you do not win is 1-1/n, and this probability multiplies. Part B results from raising the Hint to log 2 on both sides. For part C, yes, as 25 is enough to make the probabilty exceed 0.5 while 24 is not.
+	
+	\item \begin{split*}
+		&P((A \cup B) \cup C) 
+		&= P(A \cup B) + P(C) - P((A \cup B) \cap C)\\
+		&= P(A) + P(B) + P(C) - P(A \cap B) -(P((A \cup B) \cap C)) \\
+		&= P(A) + P(B) + P(C) - P(A \cap B) -(P((A \cap C) \cup (B \cap C)) \\
+		&=  P(A) + P(B) + P(C) - P(A \cap B) \\
+		 - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)
+	\end{split*}
+	
+	\item (1/2) to the 10th, eleventh, and twelfth respectively.
+	
+	\item Using the geometric series formula, $ r/(1-(1-r)) = r/r = 1 $ 
+	
+	\item This is a fallacy as the conjunction ust be included in the previous two options. 
+	
+	\item  The probability you would die at a certain age is the difference of how many people were alive the year prior and how many people are alive in the current year. This would give us the distribution function 
+	\[ m(0) = 0, m(1) = (100000 - 99073)/10000, ... \] 
+	\[m(85) = (35046-31892)/10000, m(85+) = 31892/10000
+	\]
+	\item In order to leave going westward, you must go straight past the first intersection, then take one right at the top-right leaf, and finally go straight. Alternatively, you can go straight and then take 5 right turns through all of the leaves of the interchange and then go straight again. In total, we are computing
+	\[ (1-p)^2(p)(1 + p^4 + p^8 + ...) = \]
+	\[ \dfrac{(1-p)^2(p)}{1 - p^4}  \]
+	Plugging in $ p=1/2 $ yields $ 2/15 $. For the second part, use differential calculus. Wolfram alpha states that for \[ p \approx 0.34601, P(west) \approx 0.15014 \]
+	
+	\item No, it's $1/4$ as theres a 1 in 16 chance for each of the four tires. For part b, 
+	\[ (.58)^2 + (.11)^2 + (.18)^2 + (.13)^2 \approx 0.398 \]
+\end{oddenumerate}

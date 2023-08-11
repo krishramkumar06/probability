@@ -40,7 +40,7 @@ def rightMaxFinder(arr, leftMax): #finds the first number on the right size that
 # we want to add 1 to wincount if rightmax = n
 
 wincount = 0
-trialcount = 10000
+trialcount = 100000
 n = 10 #number of people
 
 for i in range(trialcount):
